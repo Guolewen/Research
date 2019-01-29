@@ -1,0 +1,49 @@
+This file is to describe the details of 5_wards_dataset, constructed by Lewen, Guo during the Msc Program in Finance, 
+Waseda University.
+
+The 5_wards_dataset is a unique micro-level dataset which is merged by the housing rental data collected from website during 
+March 2018 and "point dataset" provided by Zenrin Corp (updated on July 2017).
+
+"Shinjuku" is the unique micro-level dataset and "Shinjukup" is "point dataset". The same formation goes for other wards.
+
+The details of dataset constructing process are illustrated in details in original master thesis.
+
+Guo, L. (2018) Automated Valuation Model: An Application in Japanese Rental Markets (Unpublished master's thesis). 
+Graduate Business School and Finance, Waseda University, Tokyo, Japan.
+  
+The variables of 5_wards_dataset contained in the directories "jsonfiles" and "dbf_shp_shx_files" are summarized as follows:
+
+type: str, the types of the house
+name: str, the names of the house
+Floorarea: float, the floor area (squared meters) of the house
+orientation: str, the orientation of the house
+Room: int, the number of rooms of the house
+living: int, the number of living room of the house
+kitchen; int,the number of the kitchen room of the house
+storage: int,the number of the storage room of the house
+dinner: int, the number of the dinner room of the house
+Managementfee, int, the amount of monthly management fee (in yen) which should be paid by tenant.
+Onefamilydummy, binary, if the house is one family the value is 1, else 0
+realaskrent, int, real monthly asking rent (in yen) of the house
+Shikikin, int, the amount of monthly deposit (in yen) of the house
+Hosyoukin, int, the amount of insurance amount(in yen) of the house
+Reikin, int, the gratuity fee (in yen)
+totalfloor, int, the total number of the building in which the house resides in. 
+floornum, int, the floor number of the house in the building
+Accessibility1, int, minutes to the nearest railway station by walk. 
+MaterialDummy, binary, 1 if the house is constructed by concrete, 0 for wood
+relativefloor, float, floornum divided by totalfloor
+longitude, float, longitude of the house
+latitude, float, latitude of the house
+nameofpointdata, str, the name of the house in point dataset
+fuzzyratio, int, fuzzy ratio for the matching of two datasets
+location, str, the address of the house
+indexofp, int, the index of the house in point dataset
+unitrent, float, realaskrent divided by Floorarea
+logunitrent, float, the logarithms of unitrent
+geometry. point, combined latitude and longitude
+
+
+
+
+ 
