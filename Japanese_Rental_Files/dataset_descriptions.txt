@@ -31,6 +31,7 @@ Reikin, int, the gratuity fee (in yen)
 totalfloor, int, the total number of the building in which the house resides in. 
 floornum, int, the floor number of the house in the building
 Accessibility1, int, minutes to the nearest railway station by walk. 
+Age, float, the age (in years) of the building at March 1st 2018.
 MaterialDummy, binary, 1 if the house is constructed by concrete, 0 for wood
 relativefloor, float, floornum divided by totalfloor
 longitude, float, longitude of the house
